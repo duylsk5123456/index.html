@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Create product list with CSS3</title>
+<style type="text/css">
+.ProductDetails {display: none;}
+.Product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+.ProductName {font-weight: bold;}
+.ProductPrice {font-style: italic;}
+.ProductPrice:before {content: " - ";}
+.Product {
+    text-align: center;
+    width: 150px;
+    margin: 10px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover .ProductDetails {display: block;}
+</style>
+</head>
+<body>
+    <div>
+        <div class="Product">
+            <img src="https://www.google.com.vn/search?tbm=isch&q=%E1%BA%A3nh+h%E1%BB%8Dc+sinh#imgrc=KoappCqp44hLAM" />
+            <div class="ProductDetails">
+                <span class="ProductName">Rose</span>
+                <span class="ProductPrice">1.5$</span>
+            </div>
+        </div>
+        <div class="Product">
+            <img src="https://flexdecor.vn/wp-content/uploads/2022/10/Hoa-lua-Tulip-trang-tri-phong-khach-HNT5584-11.jpg" />
+            <div class="ProductDetails">
+                <span class="ProductName">Tulip</span>
+                <span class="ProductPrice">2.8$</span>
+            </div>
+        </div>
+        <div class="Product">
+            <img src="https://www.allthatgrows.in/cdn/shop/products/Daisy_Double_Mixed_2946x.jpg?v=1509622766" />
+            <div class="ProductDetails">
+                <span class="ProductName">Daisy</span>
+                <span class="ProductPrice">1.8$</span>
+            </div>
+        </div>
+    </div>
+</body>
